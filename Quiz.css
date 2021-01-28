@@ -1,0 +1,61 @@
+body{
+    /*background-color: #000000;*/
+    background-image: url("./Background.jpg");;
+    background-size: auto;
+    color: white;
+    /*text-align: center;*/
+    font-family: arial;
+    /*padding-left: 50px;*/
+
+}
+
+h1 {
+    text-align: center;
+    margin: 2px 0 15px 0;
+}
+h1:hover{
+    color: rgba(70,80,120,1);
+}
+
+/*
+Implement more styles to ensure questions are displayed and printed correctly (as per the PDF file for questions and answers).
+*/
+.actionButtons{
+    alignment-adjust: 12px;
+    /*background-color: antiquewhite;*/
+    /*padding-left: 400px;*/
+    /*padding-top: 10px;*/
+    padding: 10px  400px 20px !important;
+}
+#quizBuilder{
+    padding: 20px;
+    background-color: black ;
+    color: white;
+    align-self: auto;
+
+}
+#quizBuilder:hover{
+    background-color: darkgray;
+    text-decoration-line: underline;
+    color: black;
+    font-weight: bold;
+}
+#answerBuilder{
+    padding: 20px;
+    background-color: black ;
+    color: white;
+    align-self: flex-end;
+}
+#answerBuilder:hover{
+    background-color: darkgray;
+    text-decoration-line: underline;
+    color: black;
+    font-weight: bold;
+}
+/* The below media query ensures that the buttons are not visible in print */
+@media print {
+    div.actionButtons {
+        display: none !important;
+    }
+}
+
